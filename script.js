@@ -105,7 +105,7 @@ $(() => {
 	$(".logo").hover(function () {
 		$(".hide-ul").slideDown();
 	});
-	$(".logo").mouseleave(function () {
+	$(".logo .name").mouseleave(function () {
 		$(".hide-ul").slideUp(100);
 	});
 
