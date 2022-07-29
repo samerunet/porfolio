@@ -102,14 +102,76 @@ $(() => {
 		$project3();
 	};
 
-	$(".logo").hover(function () {
+	const $contact = () => {
+		$clearDiv();
+		const $form = $("<div>").addClass("form").appendTo(".main-content");
+		const $h2 = $("<h2>")
+			.addClass("secondText")
+			.text("i will contact you shortly")
+			.appendTo(".form");
+		const $formInput = $("<div>").addClass("formInput").appendTo(".form");
+		const $input = $("<input>").appendTo(".formInput").attr({
+			type: "text",
+			placeholder: "Your name",
+			name: "name",
+			required,
+		});
+	};
+	$(".name").click(function () {
 		$(".hide-ul").slideDown();
 	});
-	$(".logo .name").mouseleave(function () {
+	$(".name").mouseleave(function () {
 		$(".hide-ul").slideUp(100);
 	});
 
 	// $home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
+	$("#contact").on("click", $contact);
 });
+
+/* <div class="contact">
+					<form
+						action="https://formsubmit.co/samerunet@gmail.com"
+						method="POST"
+					>
+						<div class="form">
+							<h2 class="secondText">I WILL CONTACT YOU SHORTLY!</h2>
+							<div class="formInput">
+								<input
+									type="text"
+									placeholder="Your name"
+									name="name"
+									required
+								/>
+							</div>
+							<p></p>
+							<div class="formInput">
+								<input
+									type="number"
+									placeholder="Your phone number"
+									name="phone"
+									required
+								/>
+							</div>
+							<p></p>
+							<div class="formInput">
+								<input
+									type="email"
+									placeholder="Email"
+									size="29"
+									name="email"
+									required
+								/>
+							</div>
+						<div class="formInput">
+							<input
+								type="text"
+								placeholder="Your question"
+								name="question-name"
+								required
+							/>
+						
+						</div>
+						<input type="submit" class="send" value="SEND" />
+					</form> */
