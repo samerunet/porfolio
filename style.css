@@ -294,6 +294,8 @@ input {
 	.picture img {
 		height: 400px;
 		width: 250px;
+		margin-left: -300px;
+		margin-top: 150px;
 	}
 	.main-container-text {
 		margin-top: 10px;
