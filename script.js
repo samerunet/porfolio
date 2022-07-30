@@ -148,8 +148,8 @@ $(() => {
 	$(".name").mouseleave(function () {
 		$(".hide-ul").css("display", "none");
 	});
-	$project();
-	// $home();
+	//$project();
+	$home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
 	$("#contact").on("click", $contact);

@@ -237,7 +237,12 @@ input {
 	color: #f4f3f2;
 }
 
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) 
+{ */
+	@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3){}
 	nav {
 		position: fixed;
 		width: 100%;
