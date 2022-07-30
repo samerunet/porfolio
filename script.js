@@ -114,64 +114,43 @@ $(() => {
 			type: "text",
 			placeholder: "Your name",
 			name: "name",
-			required,
+			required: "true",
 		});
+		const $formInput1 = $("<div>").addClass("formInput1").appendTo(".form");
+		const $input1 = $("<input>").appendTo(".formInput1").attr({
+			type: "number",
+			placeholder: "Your phone number",
+			name: "phone",
+			required: "true",
+		});
+		const $formInput2 = $("<div>").addClass("formInput2").appendTo(".form");
+		const $input2 = $("<input>").appendTo(".formInput2").attr({
+			type: "email",
+			placeholder: "Your email",
+			name: "email",
+			required: "true",
+		});
+		const $formInput3 = $("<div>").addClass("formInput3").appendTo(".form");
+		const $input3 = $("<input>").appendTo(".formInput3").attr({
+			type: "text",
+			placeholder: "Your text",
+			name: "question",
+			required: "true",
+		});
+		//
+		const $submit = $("<input>")
+			.appendTo(".form")
+			.attr({ type: "submit", class: "send", value: "SEND" });
 	};
-	$(".name").click(function () {
+	$(".logo").mouseover(function () {
 		$(".hide-ul").slideDown();
 	});
 	$(".name").mouseleave(function () {
-		$(".hide-ul").slideUp(100);
+		$(".hide-ul").css("display", "none");
 	});
-
+	$project();
 	// $home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
 	$("#contact").on("click", $contact);
 });
-
-/* <div class="contact">
-					<form
-						action="https://formsubmit.co/samerunet@gmail.com"
-						method="POST"
-					>
-						<div class="form">
-							<h2 class="secondText">I WILL CONTACT YOU SHORTLY!</h2>
-							<div class="formInput">
-								<input
-									type="text"
-									placeholder="Your name"
-									name="name"
-									required
-								/>
-							</div>
-							<p></p>
-							<div class="formInput">
-								<input
-									type="number"
-									placeholder="Your phone number"
-									name="phone"
-									required
-								/>
-							</div>
-							<p></p>
-							<div class="formInput">
-								<input
-									type="email"
-									placeholder="Email"
-									size="29"
-									name="email"
-									required
-								/>
-							</div>
-						<div class="formInput">
-							<input
-								type="text"
-								placeholder="Your question"
-								name="question-name"
-								required
-							/>
-						
-						</div>
-						<input type="submit" class="send" value="SEND" />
-					</form> */

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,regular,600&display=swap");
 
 /* div {
-	border: 2px solid white;
+	border: 2px solid rgb(227, 6, 6);
 } */
 * {
 	margin: 0;
@@ -211,6 +211,7 @@ nav ul li a:hover {
 	margin: 10vh;
 }
 .form {
+	margin-top: 10vh;
 	width: 70%;
 }
 .form h2 {
@@ -234,4 +235,82 @@ input {
 .send:hover {
 	background-color: #060606;
 	color: #f4f3f2;
+}
+
+@media screen and (max-width: 420px) {
+	nav {
+		position: fixed;
+		width: 100%;
+		height: 100px;
+		padding: 0px 41px;
+		box-sizing: border-box;
+		transition: 0.5s;
+		z-index: 100;
+	}
+	nav .logo {
+		height: 20px;
+	}
+	nav ul {
+		height: 10px;
+	}
+
+	nav ul li a {
+		padding: 10px;
+	}
+	nav ul li {
+		margin-right: 17px;
+		font-size: 12px;
+		margin-left: -15px;
+	}
+
+	nav.black ul li {
+		margin-right: 17px;
+		font-size: 12px;
+		margin-left: -15px;
+	}
+	nav.black ul li a {
+		padding: 10px;
+	}
+	nav.black ul {
+		height: 10px;
+	}
+	nav.black {
+		position: fixed;
+		width: 100%;
+		height: 100px;
+		padding: 0px 41px;
+		box-sizing: border-box;
+		transition: 0.5s;
+		z-index: 100;
+	}
+	nav.black .logo {
+		height: 20px;
+	}
+	.picture img {
+		height: 400px;
+		width: 250px;
+	}
+	.main-container-text {
+		margin-top: 10px;
+		margin-left: 25px;
+	}
+
+	.project,
+	.project2,
+	.project3 {
+		display: flex;
+		padding: 1rem 1rem;
+		vertical-align: middle;
+		margin-top: 50px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.work-card img,
+	.work-card2 img,
+	.work-card3 img {
+		height: 300px;
+		width: 300px;
+		margin-left: 10%;
+	}
 }
