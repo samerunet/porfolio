@@ -256,6 +256,7 @@ input {
 		border-radius: 0 20px;
 		margin-top: -5px;
 		font-size: 10px;
+		margin-left: -19px;
 	}
 	nav ul {
 		height: 0px;
@@ -321,5 +322,9 @@ input {
 		height: 300px;
 		width: 300px;
 		margin-left: 10%;
+	}
+
+	.hide-ul {
+		display: block;
 	}
 }
