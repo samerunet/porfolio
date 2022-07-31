@@ -142,14 +142,18 @@ $(() => {
 			.appendTo(".form")
 			.attr({ type: "submit", class: "send", value: "SEND" });
 	};
+	const $about = () => {
+		$clearDiv();
+		const $about = $("<div>").appendTo(".maincontent");
+	};
 	$(".logo").mouseover(function () {
 		$(".hide-ul").slideDown();
 	});
 	$(".name").mouseleave(function () {
 		$(".hide-ul").css("display", "none");
 	});
-
-	// $home();
+	$about()
+	//$home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
 	$("#contact").on("click", $contact);

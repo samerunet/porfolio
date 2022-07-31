@@ -243,8 +243,10 @@ input {
 .about-info {
 	color: #f4f3f2;
 	padding-left: 10%;
-	padding-top: 20%;
+	padding-top: 10%;
+	font-size: 30px;
 }
+
 .about-gallery {
 	flex: 0 0 50%;
 	display: grid;
@@ -281,6 +283,18 @@ input {
 	grid-row: 3/5;
 }
 @media screen and (max-width: 600px) {
+	.about-container h2 {
+		background-color: #f4f3f2;
+		color: #1d1d1c;
+		padding: 0;
+	}
+	.about-container {
+		flex-direction: column;
+	}
+	.about-gallery {
+		align-items: baseline;
+		margin-left: 30px;
+	}
 	nav {
 		position: fixed;
 		width: 100%;
