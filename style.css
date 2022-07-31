@@ -11,7 +11,7 @@ body {
 	font-family: "Work Sans", sans-serif;
 	margin: 0;
 	padding: 0;
-	background: rgba(17, 16, 16, 0.9);
+	background: rgba(0, 0, 0, 0.9);
 }
 .wrapper {
 	display: flex;
@@ -259,6 +259,7 @@ input {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	text-align: center;
 }
 
 .about-img {
@@ -281,6 +282,10 @@ input {
 .about-img:nth-child(3) {
 	grid-column: 2/3;
 	grid-row: 3/5;
+}
+
+span {
+	margin-bottom: 10px;
 }
 @media screen and (max-width: 600px) {
 	.about-container h2 {

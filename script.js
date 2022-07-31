@@ -144,7 +144,33 @@ $(() => {
 	};
 	const $about = () => {
 		$clearDiv();
-		const $about = $("<div>").appendTo(".maincontent");
+		const $about = $("<div>")
+			.appendTo(".main-content")
+			.addClass("about-container");
+		const $div = $("<div>").appendTo(".about-container").addClass("about-info");
+		const $h2 = $("<h2>")
+			.appendTo(".about-info")
+			.text("A bit about me".toUpperCase());
+		const $span = $("<span>")
+			.appendTo(".about-info")
+			.text(
+				"I am a software engineer that i am enthusiastic about codding and implementing new technologies. I have a previous experience with automotive engineering. I have also worked as a Financed and Insurance manager and got promoted to General Managers position, which helped me to make a quick and rational decision to every problem"
+			);
+		const $divabout = $("<div>")
+			.addClass("about-gallery")
+			.appendTo(".about-container");
+		const $divImg1 = $("<div>")
+			.addClass("about-img")
+			.appendTo(".about-gallery");
+		const $img1 = $("<img>").attr("src", "about-1.png").appendTo($divImg1);
+		const $divImg2 = $("<div>")
+			.addClass("about-img")
+			.appendTo(".about-gallery");
+		const $img2 = $("<img>").attr("src", "about-2.png").appendTo($divImg2);
+		const $divImg3 = $("<div>")
+			.addClass("about-img")
+			.appendTo(".about-gallery");
+		const $img3 = $("<img>").attr("src", "about-3.png").appendTo($divImg3);
 	};
 	$(".logo").mouseover(function () {
 		$(".hide-ul").slideDown();
@@ -152,9 +178,10 @@ $(() => {
 	$(".name").mouseleave(function () {
 		$(".hide-ul").css("display", "none");
 	});
-	$about()
+	$about();
 	//$home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
 	$("#contact").on("click", $contact);
+	$("#about").on("click", $about);
 });
