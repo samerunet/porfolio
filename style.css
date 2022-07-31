@@ -237,6 +237,41 @@ input {
 	color: #f4f3f2;
 }
 
+.side-bar {
+	list-style: none;
+	margin-left: 0px;
+	margin-top: 100px;
+	border-radius: 0 20px 0 40px;
+	text-align: center;
+}
+
+.side-bar li {
+	text-decoration: none;
+	list-style: none;
+	width: 200px;
+	padding: 30px;
+}
+.side-bar li a {
+	padding: 20px 40px;
+	font-size: 34px;
+	text-decoration: none;
+	transition: 1s;
+	color: #f4f3f2;
+	border-radius: 0 20px 0 40px;
+}
+
+.side-bar li a:hover {
+	background-color: #f4f3f2;
+	color: #060606;
+	border-radius: 0 20px 0 40px;
+}
+
+.about-content {
+	background-color: #df852c;
+	height: 400px;
+	width: 900px;
+	margin-top: 100px;
+}
 @media screen and (max-width: 600px) {
 	nav {
 		position: fixed;
