@@ -237,7 +237,7 @@ input {
 	color: #f4f3f2;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
 	nav {
 		position: fixed;
 		width: 100%;
