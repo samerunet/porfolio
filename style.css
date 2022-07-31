@@ -239,10 +239,7 @@ input {
 
 /* @media screen and (max-width: 420px) 
 { */
-	@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3){}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 	nav {
 		position: fixed;
 		width: 100%;
@@ -253,10 +250,17 @@ input {
 		z-index: 100;
 	}
 	nav .logo {
-		height: 20px;
+		background-color: #f4f3f2;
+		height: 50px;
+		float: left;
+		transition: 0.5s;
+		padding: 18px 21px;
+		border-radius: 0 20px;
+		margin-top: -5px;
+		font-size: 10px;
 	}
 	nav ul {
-		height: 10px;
+		height: 0px;
 	}
 
 	nav ul li a {
@@ -264,8 +268,9 @@ input {
 	}
 	nav ul li {
 		margin-right: 17px;
-		font-size: 12px;
+		font-size: 10px;
 		margin-left: -15px;
+		margin-top: auto;
 	}
 
 	nav.black ul li {
@@ -292,10 +297,9 @@ input {
 		height: 20px;
 	}
 	.picture img {
-		height: 400px;
-		width: 250px;
-		margin-left: -300px;
-		margin-top: 150px;
+		height: 200px;
+		width: 150px;
+		margin-left: 20px;
 	}
 	.main-container-text {
 		margin-top: 10px;
