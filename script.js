@@ -69,7 +69,7 @@ $(() => {
 					"Lorem ashdfdksdjh klhsdjkf sjdhfsk b,KLJDAHFS Ultrices lorem non feugiat egestas amet. Website Design"
 				);
 			const $av2 = $("<a>")
-				.attr("href", "#")
+				.attr("href", "https://codepen.io/samerunet/pen/qBxzbdX?editors=1111")
 				.text("View source")
 				.appendTo(".work-info2");
 			const $workCard2 = $("<div>")

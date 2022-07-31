@@ -321,7 +321,7 @@ input {
 	nav.black {
 		position: fixed;
 		width: 100%;
-		height: 100px;
+		height: 60px;
 		padding: 0px 41px;
 		box-sizing: border-box;
 		transition: 0.5s;
@@ -361,5 +361,9 @@ input {
 
 	.hide-ul {
 		display: block;
+	}
+
+	.black .logo {
+		display: none;
 	}
 }
