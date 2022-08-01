@@ -365,9 +365,8 @@ span {
 		height: 20px;
 	}
 	.picture img {
-		height: 200px;
-		width: 150px;
-		margin-left: 20px;
+		
+		display: none;
 	}
 	.main-container-text {
 		margin-top: 10px;

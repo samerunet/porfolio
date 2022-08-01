@@ -23,7 +23,9 @@ $(() => {
 			.appendTo(".main-container-text");
 		const $h1v2 = $("<h1>")
 			.addClass("text")
-			.text(`  providing solutions using MERN stack`)
+			.text(
+				`in the process of learning and creating software or a web-application that will not only give a great UI/UX experience, but also a functionality that will be useful for implementing new technologies`
+			)
 			.appendTo(".main-container-text");
 
 		const $picture = $("<div>").addClass("picture").appendTo(".main-content");
@@ -43,14 +45,16 @@ $(() => {
 				.attr("src", "card-1.png")
 				.appendTo(".work-card");
 			const $workInfo = $("<div>").addClass("work-info").appendTo(".project");
-			const $h1 = $("<h1>").text("Project 1 template").appendTo(".work-info");
+			const $h1 = $("<h1>")
+				.text("Iphone calculator".toUpperCase())
+				.appendTo(".work-info");
 			const $p = $("<p>")
 				.appendTo(".work-info")
 				.text(
-					"Lorem ashdfdksdjh klhsdjkf sjdhfsk b,KLJDAHFS Ultrices lorem non feugiat egestas amet. Website Design"
+					"This has been one of my first projects using javascript and css styling for the calculator. The idea here was not only to make a calculator, but to create a copy of an iphones calculator."
 				);
 			const $a = $("<a>")
-				.attr("href", "#")
+				.attr("href", "https://codepen.io/samerunet/pen/VwXLMRQ")
 				.text("View source")
 				.appendTo(".work-info");
 		};
@@ -61,12 +65,12 @@ $(() => {
 				.addClass("work-info2")
 				.appendTo(".project2");
 			const $h1v2 = $("<h1>")
-				.text("Project 2 template")
+				.text("Rock, Paper, Scissors")
 				.appendTo(".work-info2");
 			const $pv2 = $("<p>")
 				.appendTo(".work-info2")
 				.text(
-					"Lorem ashdfdksdjh klhsdjkf sjdhfsk b,KLJDAHFS Ultrices lorem non feugiat egestas amet. Website Design"
+					"This project was created using simple javascript DOM manipulation as well as loops and functions."
 				);
 			const $av2 = $("<a>")
 				.attr("href", "https://codepen.io/samerunet/pen/qBxzbdX?editors=1111")
@@ -86,14 +90,14 @@ $(() => {
 				.attr("src", "card-3.png")
 				.appendTo(".work-card3");
 			const $workInfo = $("<div>").addClass("work-info3").appendTo(".project3");
-			const $h1 = $("<h1>").text("Project 3 template").appendTo(".work-info3");
+			const $h1 = $("<h1>").text("Tic, Tac, Toe").appendTo(".work-info3");
 			const $p = $("<p>")
 				.appendTo(".work-info3")
 				.text(
-					"Lorem ashdfdksdjh klhsdjkf sjdhfsk b,KLJDAHFS Ultrices lorem non feugiat egestas amet. Website Design"
+					"Basics of javascript, tic-tac-toe gives a creator a wide variety of knowledge. You can start by creating great UI/UX, but you can also give it a great functionality, at the end of the day a project like this will give you the opportunity to learn and create functions and logic integration for your project."
 				);
 			const $a = $("<a>")
-				.attr("href", "#")
+				.attr("href", "https://codepen.io/samerunet/pen/poaXjQM")
 				.text("View source")
 				.appendTo(".work-info3");
 		};
@@ -178,8 +182,8 @@ $(() => {
 	$(".name").mouseleave(function () {
 		$(".hide-ul").css("display", "none");
 	});
-	$about();
-	//$home();
+
+	$home();
 	$("#home").on("click", $home);
 	$("#project").on("click", $project);
 	$("#contact").on("click", $contact);
