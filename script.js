@@ -160,6 +160,11 @@ $(() => {
 			.text(
 				"I am a software engineer that i am enthusiastic about codding and implementing new technologies. I have a previous experience with automotive engineering. I have also worked as a Financed and Insurance manager and got promoted to General Managers position, which helped me to make a quick and rational decision to every problem"
 			);
+		const $av2 = $("<a>")
+			.addClass("resume")
+			.attr("href", "#")
+			.text("Resume")
+			.appendTo(".about-info");
 		const $divabout = $("<div>")
 			.addClass("about-gallery")
 			.appendTo(".about-container");

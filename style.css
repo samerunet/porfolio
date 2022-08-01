@@ -128,6 +128,7 @@ nav ul li a:hover {
 
 .text {
 	color: rgba(227, 228, 230, 0.55);
+	-webkit-filter: drop-shadow(20px 0px 100px rgba(88, 87, 87, 0.6));
 }
 
 .project,
@@ -294,6 +295,18 @@ input {
 span {
 	margin-bottom: 10px;
 }
+
+.resume {
+	display: inline-block;
+	margin-top: 32px;
+	padding: 8px 48px 8px 36px;
+	border: 1px solid rgba(227, 228, 230, 0.55);
+
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	transition: 1s;
+}
 @media screen and (max-width: 600px) {
 	.about-container h2 {
 		background-color: #f4f3f2;
@@ -365,7 +378,6 @@ span {
 		height: 20px;
 	}
 	.picture img {
-		
 		display: none;
 	}
 	.main-container-text {
