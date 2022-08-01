@@ -184,8 +184,8 @@ $(() => {
 	$(".logo").mouseover(function () {
 		$(".hide-ul").slideDown();
 	});
-	$(".name").mouseleave(function () {
-		$(".hide-ul").css("display", "none");
+	$(".logo").mouseleave(function () {
+		$(".hide-ul").hide(100);
 	});
 
 	$home();
