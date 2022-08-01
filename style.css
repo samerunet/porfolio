@@ -283,6 +283,13 @@ input {
 	grid-column: 2/3;
 	grid-row: 3/5;
 }
+.about-container h2 {
+	background-color: #f4f3f2;
+	color: #1d1d1c;
+	padding: 10px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
 
 span {
 	margin-bottom: 10px;
