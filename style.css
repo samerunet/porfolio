@@ -296,9 +296,12 @@ span {
 	margin-bottom: 10px;
 }
 
+.black .hide-ul a {
+	color: #f4f3f2;
+}
 .resume {
 	display: inline-block;
-	margin-top: 32px;
+	margin-top: 62px;
 	padding: 8px 48px 8px 36px;
 	border: 1px solid rgba(227, 228, 230, 0.55);
 
